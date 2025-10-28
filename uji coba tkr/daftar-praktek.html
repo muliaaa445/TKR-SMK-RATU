@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Praktik | SMK Veteran 1 Sukoharjo</title>
+  <meta name="description" content="Formulir pendaftaran praktik bengkel untuk siswa SMK Veteran 1 Sukoharjo." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-logo">BP</div>
+      <div class="loader-text">Bengkel Praktik</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" aria-label="Navigasi utama">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">TKR</div>
+        <div class="sidebar-title">Bengkel Praktik</div>
+      </div>
+      
+      <div class="sidebar-nav">
+        <a href="tkr.html">
+          <div class="sidebar-icon">🏠</div>
+          <div class="sidebar-text">Beranda</div>
+        </a>
+        <a href="profil.html">
+          <div class="sidebar-icon">👥</div>
+          <div class="sidebar-text">Profil Bengkel</div>
+        </a>
+        <a href="layanan.html">
+          <div class="sidebar-icon">🔧</div>
+          <div class="sidebar-text">Layanan</div>
+        </a>
+        <a href="galeri.html">
+          <div class="sidebar-icon">🖼️</div>
+          <div class="sidebar-text">Galeri</div>
+        </a>
+        <a href="kontak.html">
+          <div class="sidebar-icon">📞</div>
+          <div class="sidebar-text">Kontak</div>
+        </a>
+        <a href="daftar-praktek.html" class="active">
+          <div class="sidebar-icon">📝</div>
+          <div class="sidebar-text">Daftar Praktik</div>
+        </a>
+      </div>
+      
+      <div class="sidebar-footer">
+        <button class="toggle-btn" aria-label="Toggle sidebar">
+          <div class="sidebar-icon">←</div>
+          <div class="sidebar-text">Sembunyikan Menu</div>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <div class="sidebar-icon theme-icon">🌙</div>
+          <div class="sidebar-text theme-text">Mode Gelap</div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent" aria-hidden="true">
+      <div class="wrap">
+        <header class="site-header fade-in" data-animate="fade-in">
+          <div class="brand">
+            <div class="logo">BP</div>
+            <div>
+              <h1 class="brand-title">Daftar Praktik</h1>
+              <div class="brand-sub">SMK Veteran 1 Sukoharjo</div>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="card fade-in" data-animate="fade-in">
+            <h2 class="hero-title">Formulir Pendaftaran Praktik</h2>
+            <p class="hero-sub">Isi formulir berikut untuk mendaftar sesi praktik di bengkel. Pastikan data yang diisi benar dan lengkap.</p>
+            
+            <form id="daftarForm" class="contact-grid">
+              <div>
+                <div class="form-row">
+                  <label for="nama">Nama Lengkap</label>
+                  <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+                </div>
+                
+                <div class="form-row">
+                  <label for="nis">NIS</label>
+                  <input type="text" id="nis" name="nis" required placeholder="Nomor Induk Siswa">
+                </div>
+                
+                <div class="form-row">
+                  <label for="kelas">Kelas</label>
+                  <input type="text" id="kelas" name="kelas" required placeholder="Contoh: XII TKR 1">
+                </div>
+                
+                <div class="form-row">
+                  <label for="tanggal">Tanggal Praktik</label>
+                  <input type="date" id="tanggal" name="tanggal" required>
+                </div>
+                
+                <div class="form-row">
+                  <label for="sesi">Sesi Praktik</label>
+                  <select id="sesi" name="sesi" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e6eef8; background: var(--card); color: var(--text);">
+                    <option value="">Pilih Sesi</option>
+                    <option value="pagi">Pagi (07.00 - 10.00)</option>
+                    <option value="siang">Siang (10.00 - 13.00)</option>
+                    <option value="sore">Sore (13.00 - 16.00)</option>
+                  </select>
+                </div>
+                
+                <div class="form-row">
+                  <label for="materi">Materi Praktik</label>
+                  <select id="materi" name="materi" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e6eef8; background: var(--card); color: var(--text);">
+                    <option value="">Pilih Materi</option>
+                    <option value="service">Service Berkala</option>
+                    <option value="mesin">Perbaikan Mesin</option>
+                    <option value="kelistrikan">Sistem Kelistrikan</option>
+                    <option value="body">Body Repair</option>
+                    <option value="lainnya">Lainnya</option>
+                  </select>
+                </div>
+                
+                <div class="form-row">
+                  <label for="keterangan">Keterangan Tambahan</label>
+                  <textarea id="keterangan" name="keterangan" rows="4" placeholder="Jelaskan tujuan praktik atau kebutuhan khusus..."></textarea>
+                </div>
+                
+                <div class="form-actions">
+                  <button type="submit" class="btn primary">Daftar Praktik</button>
+                  <button type="reset" class="btn secondary">Reset Form</button>
+                </div>
+                
+                <div id="formMsg" class="form-msg" aria-live="polite"></div>
+              </div>
+              
+              <aside class="hero-aside">
+                <div class="card reservation slide-left" data-animate="slide-left">
+                  <h3>📋 Informasi Penting</h3>
+                  <p><strong>Persyaratan:</strong></p>
+                  <ul style="text-align: left; margin: 12px 0; padding-left: 20px;">
+                    <li>Membawa alat praktik pribadi</li>
+                    <li>Seragam praktik lengkap</li>
+                    <li>Sudah mengikuti teori terkait</li>
+                  </ul>
+                  <p class="muted-small">Konfirmasi akan dikirim via WhatsApp</p>
+                </div>
+                
+                <div class="card card-small slide-left" data-animate="slide-left" style="animation-delay: 0.2s">
+                  <h4>⏰ Jadwal Tersedia</h4>
+                  <p>Senin - Jumat</p>
+                  <p>3 Sesi/hari</p>
+                  <p class="muted-small">Max. 10 siswa/sesi</p>
+                </div>
+              </aside>
+            </form>
+          </div>
+        </section>
+
+        <footer class="site-footer fade-in" data-animate="fade-in">
+          <p>&copy; 2024 Bengkel Praktik SMK Veteran 1 Sukoharjo. Semua hak dilindungi.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+  <script>
+    // Form handler khusus untuk daftar praktik
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('daftarForm');
+      const msg = document.getElementById('formMsg');
+
+      if (!form || !msg) return;
+
+      function showMessage(text, type = 'success') {
+        msg.textContent = text;
+        msg.style.color = type === 'error' ? '#b91c1c' : '#065f46';
+        msg.style.background = type === 'error' ? '#fee2e2' : '#dcfce7';
+        msg.setAttribute('aria-hidden', 'false');
+        msg.style.opacity = '1';
+        msg.style.display = 'block';
+
+        setTimeout(() => {
+          msg.style.opacity = '0';
+          setTimeout(() => {
+            msg.textContent = '';
+            msg.setAttribute('aria-hidden', 'true');
+            msg.style.background = 'transparent';
+            msg.style.display = 'none';
+          }, 300);
+        }, 5000);
+      }
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nama = (document.getElementById('nama').value || '').trim();
+        const nis = (document.getElementById('nis').value || '').trim();
+        const kelas = (document.getElementById('kelas').value || '').trim();
+        const tanggal = (document.getElementById('tanggal').value || '').trim();
+        const sesi = (document.getElementById('sesi').value || '').trim();
+        const materi = (document.getElementById('materi').value || '').trim();
+
+        if (!nama || !nis || !kelas || !tanggal || !sesi || !materi) {
+          showMessage('Lengkapi semua kolom yang wajib diisi.', 'error');
+          return;
+        }
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Mendaftarkan...';
+        submitBtn.disabled = true;
+
+        // Simulasi pengiriman data
+        setTimeout(() => {
+          showMessage('Pendaftaran berhasil! Konfirmasi akan dikirim via WhatsApp.', 'success');
+          form.reset();
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          console.log('Pendaftaran praktik:', { nama, nis, kelas, tanggal, sesi, materi });
+        }, 1500);
+      });
+    });
+  </script>
+</body>
+</html>

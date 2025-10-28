@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layanan | SMK Veteran 1 Sukoharjo</title>
+  <meta name="description" content="Layanan bengkel praktik SMK Veteran 1 Sukoharjo - service, perbaikan mesin, kelistrikan, dan body repair." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-logo">BP</div>
+      <div class="loader-text">Bengkel Praktik</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" aria-label="Navigasi utama">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">BP</div>
+        <div class="sidebar-title">Bengkel Praktik</div>
+      </div>
+      
+      <div class="sidebar-nav">
+        <a href="tkr.html">
+          <div class="sidebar-icon">🏠</div>
+          <div class="sidebar-text">Beranda</div>
+        </a>
+        <a href="profil.html">
+          <div class="sidebar-icon">👥</div>
+          <div class="sidebar-text">Profil Bengkel</div>
+        </a>
+        <a href="layanan.html" class="active">
+          <div class="sidebar-icon">🔧</div>
+          <div class="sidebar-text">Layanan</div>
+        </a>
+        <a href="galeri.html">
+          <div class="sidebar-icon">🖼️</div>
+          <div class="sidebar-text">Galeri</div>
+        </a>
+        <a href="kontak.html">
+          <div class="sidebar-icon">📞</div>
+          <div class="sidebar-text">Kontak</div>
+        </a>
+        <a href="daftar-praktek.html">
+          <div class="sidebar-icon">📝</div>
+          <div class="sidebar-text">Daftar Praktik</div>
+        </a>
+      </div>
+      
+      <div class="sidebar-footer">
+        <button class="toggle-btn" aria-label="Toggle sidebar">
+          <div class="sidebar-icon">←</div>
+          <div class="sidebar-text">Sembunyikan Menu</div>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <div class="sidebar-icon theme-icon">🌙</div>
+          <div class="sidebar-text theme-text">Mode Gelap</div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent" aria-hidden="true">
+      <div class="wrap">
+        <header class="site-header fade-in" data-animate="fade-in">
+          <div class="brand">
+            <div class="logo">BP</div>
+            <div>
+              <h1 class="brand-title">Layanan Bengkel</h1>
+              <div class="brand-sub">SMK Veteran 1 Sukoharjo</div>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="card fade-in" data-animate="fade-in">
+            <h2 class="hero-title">Layanan Praktik & Perbaikan</h2>
+            <p class="hero-sub">Kami menyediakan berbagai layanan praktik untuk siswa dan perbaikan terbatas untuk kendaraan internal sekolah dengan standar profesional.</p>
+            
+            <div class="services">
+              <div class="service slide-up" data-animate="slide-up">Service Berkala</div>
+              <div class="service slide-up" data-animate="slide-up" style="animation-delay: 0.1s">Perbaikan Mesin</div>
+              <div class="service slide-up" data-animate="slide-up" style="animation-delay: 0.2s">Sistem Kelistrikan</div>
+              <div class="service slide-up" data-animate="slide-up" style="animation-delay: 0.3s">Body Repair</div>
+            </div>
+          </div>
+
+          <aside class="hero-aside">
+            <div class="card reservation slide-left" data-animate="slide-left">
+              <h3>📅 Booking Layanan</h3>
+              <p>Untuk perbaikan kendaraan sekolah, silakan hubungi kami terlebih dahulu untuk penjadwalan.</p>
+              <a href="kontak.html" class="btn primary" style="margin-top: 12px; display: inline-block;">Hubungi Kami</a>
+            </div>
+            
+            <div class="card card-small slide-left" data-animate="slide-left" style="animation-delay: 0.2s">
+              <h4>⏱️ Estimasi</h4>
+              <p>Service: 2-3 jam</p>
+              <p>Perbaikan: 1-3 hari</p>
+              <p class="muted-small">Tergantung kerusakan</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="feature-grid">
+          <div class="feature-item slide-up" data-animate="slide-up">
+            <div class="feature-icon">🛠️</div>
+            <h3>Service Berkala</h3>
+            <p>Layanan perawatan rutin meliputi ganti oli, tune-up, pemeriksaan rem, dan pengecekan sistem kendaraan secara menyeluruh.</p>
+            <ul style="text-align: left; margin-top: 12px;">
+              <li>Ganti oli & filter</li>
+              <li>Tune-up mesin</li>
+              <li>Pemeriksaan rem</li>
+              <li>Rotasi ban</li>
+            </ul>
+          </div>
+          <div class="feature-item slide-up" data-animate="slide-up" style="animation-delay: 0.1s">
+            <div class="feature-icon">🚗</div>
+            <h3>Perbaikan Mesin</h3>
+            <p>Diagnosis dan perbaikan masalah mesin termasuk sistem bahan bakar, pendingin, dan komponen mekanis lainnya.</p>
+            <ul style="text-align: left; margin-top: 12px;">
+              <li>Overhaul mesin</li>
+              <li>Sistem bahan bakar</li>
+              <li>Sistem pendingin</li>
+              <li>Turun mesin</li>
+            </ul>
+          </div>
+          <div class="feature-item slide-up" data-animate="slide-up" style="animation-delay: 0.2s">
+            <div class="feature-icon">⚡</div>
+            <h3>Sistem Kelistrikan</h3>
+            <p>Perbaikan dan perawatan sistem kelistrikan kendaraan termasuk aki, alternator, starter, dan wiring harness.</p>
+            <ul style="text-align: left; margin-top: 12px;">
+              <li>Sistem pengisian</li>
+              <li>Starting system</li>
+              <li>Kelistrikan body</li>
+              <li>Diagnosis ECU</li>
+            </ul>
+          </div>
+          <div class="feature-item slide-up" data-animate="slide-up" style="animation-delay: 0.3s">
+            <div class="feature-icon">🎨</div>
+            <h3>Body Repair</h3>
+            <p>Perbaikan body kendaraan termasuk dempul, pengecatan, dan perbaikan komponen eksterior yang rusak.</p>
+            <ul style="text-align: left; margin-top: 12px;">
+              <li>Dempul & cat</li>
+              <li>Perbaikan panel</li>
+              <li>Ganti kaca</li>
+              <li>Pengecatan ulang</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="card fade-in" data-animate="fade-in">
+          <h3>Proses Layanan</h3>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h4>Pendaftaran</h4>
+              <p>Isi formulir pendaftaran atau hubungi kami untuk penjadwalan</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h4>Diagnosis</h4>
+              <p>Pemeriksaan menyeluruh untuk mengidentifikasi masalah</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h4>Persetujuan</h4>
+              <p>Konfirmasi biaya dan waktu perbaikan sebelum pekerjaan</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h4>Pengerjaan</h4>
+              <p>Proses perbaikan oleh siswa dibimbing instruktur</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">5</div>
+              <h4>Quality Control</h4>
+              <p>Pengecekan akhir oleh instruktur berpengalaman</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">6</div>
+              <h4>Penyerahan</h4>
+              <p>Kendaraan siap diambil dengan garansi pekerjaan</p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer fade-in" data-animate="fade-in">
+          <p>&copy; 2024 Bengkel Praktik SMK Veteran 1 Sukoharjo. Semua hak dilindungi.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

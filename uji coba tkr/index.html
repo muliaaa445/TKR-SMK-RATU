@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Bengkel | SMK Veteran 1 Sukoharjo</title>
+  <meta name="description" content="Profil bengkel praktik otomotif SMK Veteran 1 Sukoharjo – layanan praktik, fasilitas, jadwal, kontak, dan galeri." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-logo"></div>
+      <div class="loader-text">Bengkel Praktik</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" aria-label="Navigasi utama">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">TKR</div>
+        <div class="sidebar-title">Bengkel Praktik</div>
+      </div>
+      
+      <div class="sidebar-nav">
+        <a href="tkr.html" class="active">
+          <div class="sidebar-icon">🏠</div>
+          <div class="sidebar-text">Beranda</div>
+        </a>
+        <a href="profil.html">
+          <div class="sidebar-icon">👥</div>
+          <div class="sidebar-text">Profil Bengkel</div>
+        </a>
+        <a href="layanan.html">
+          <div class="sidebar-icon">🔧</div>
+          <div class="sidebar-text">Layanan</div>
+        </a>
+        <a href="galeri.html">
+          <div class="sidebar-icon">🖼️</div>
+          <div class="sidebar-text">Galeri</div>
+        </a>
+        <a href="kontak.html">
+          <div class="sidebar-icon">📞</div>
+          <div class="sidebar-text">Kontak</div>
+        </a>
+        <a href="daftar-praktek.html">
+          <div class="sidebar-icon">📝</div>
+          <div class="sidebar-text">Daftar Praktik</div>
+        </a>
+      </div>
+      
+      <div class="sidebar-footer">
+        <button class="toggle-btn" aria-label="Toggle sidebar">
+          <div class="sidebar-icon">←</div>
+          <div class="sidebar-text">Sembunyikan Menu</div>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <div class="sidebar-icon theme-icon">🌙</div>
+          <div class="sidebar-text theme-text">Mode Gelap</div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent" aria-hidden="true">
+      <div class="wrap">
+        <header class="site-header fade-in" data-animate="fade-in">
+          <div class="brand">
+            <div class="logo">TKR</div>
+            <div>
+              <h1 class="brand-title">Bengkel Praktik</h1>
+              <div class="brand-sub">SMK Veteran 1 Sukoharjo</div>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="card fade-in" data-animate="fade-in">
+            <h2 class="hero-title">Selamat Datang di Bengkel Praktik</h2>
+            <p class="hero-sub">Tempat pembelajaran praktik otomotif untuk siswa SMK Veteran 1 Sukoharjo dengan fasilitas lengkap dan instruktur berpengalaman.</p>
+            
+            <div class="services">
+              <div class="service slide-up" data-animate="slide-up">Perbaikan Mesin</div>
+              <div class="service slide-up" data-animate="slide-up" style="animation-delay: 0.1s">Service Berkala</div>
+              <div class="service slide-up" data-animate="slide-up" style="animation-delay: 0.2s">Kelistrikan</div>
+              <div class="service slide-up" data-animate="slide-up" style="animation-delay: 0.3s">Body Repair</div>
+            </div>
+          </div>
+
+          <aside class="hero-aside">
+            <div class="card reservation slide-left" data-animate="slide-left">
+              <h3>📅 Daftar Praktik</h3>
+              <p>Jadwalkan sesi praktik Anda sekarang</p>
+              <a href="daftar-praktek.html" class="btn primary" style="margin-top: 12px; width: 100%;">Daftar Sekarang</a>
+            </div>
+            
+            <div class="card card-small slide-left" data-animate="slide-left" style="animation-delay: 0.2s">
+              <h4>🕒 Jam Operasional</h4>
+              <p>Senin - Jumat: 07.00 - 16.00</p>
+              <p class="muted-small">Sabtu: 08.00 - 12.00</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="stats-grid">
+          <div class="card stat-card fade-in" data-animate="fade-in">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Tahun Pengalaman</div>
+          </div>
+          <div class="card stat-card fade-in" data-animate="fade-in" style="animation-delay: 0.1s">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Siswa Terlatih</div>
+          </div>
+          <div class="card stat-card fade-in" data-animate="fade-in" style="animation-delay: 0.2s">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Unit Alat</div>
+          </div>
+          <div class="card stat-card fade-in" data-animate="fade-in" style="animation-delay: 0.3s">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support Guru</div>
+          </div>
+        </section>
+
+        <section class="feature-grid">
+          <div class="feature-item slide-up" data-animate="slide-up">
+            <div class="feature-icon">🔧</div>
+            <h3>Fasilitas Lengkap</h3>
+            <p>Bengkel dilengkapi dengan peralatan modern dan terkini untuk mendukung proses pembelajaran.</p>
+          </div>
+          <div class="feature-item slide-up" data-animate="slide-up" style="animation-delay: 0.1s">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3>Instruktur Berpengalaman</h3>
+            <p>Didampingi oleh guru-guru profesional dengan pengalaman di bidang otomotif.</p>
+          </div>
+          <div class="feature-item slide-up" data-animate="slide-up" style="animation-delay: 0.2s">
+            <div class="feature-icon">📚</div>
+            <h3>Kurikulum Terstruktur</h3>
+            <p>Mengikuti kurikulum SMK yang terstruktur dan sesuai dengan kebutuhan industri.</p>
+          </div>
+        </section>
+
+        <footer class="site-footer fade-in" data-animate="fade-in">
+          <p>&copy; 2024 Bengkel Praktik SMK Veteran 1 Sukoharjo. Semua hak dilindungi.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
